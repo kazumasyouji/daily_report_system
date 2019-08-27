@@ -52,6 +52,13 @@ public class Report {
     @Column(name = "title", length = 255, nullable = false)
     private String title;
 
+    @Column(name = "gowork", nullable = false)
+    private String gowork;
+
+    @Column(name = "retirement", nullable = false)
+    private String retirement;
+
+
     @Lob
     @Column(name = "content", nullable = false)
     private String content;
@@ -116,6 +123,22 @@ public class Report {
 
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
+    }
+
+    public String getGowork() {
+        return gowork;
+    }
+
+    public void setGowork(String gowork) {
+        this.gowork = gowork;
+    }
+
+    public String getRetirement() {
+        return retirement;
+    }
+
+    public void setRetirement(String retirement) {
+        this.retirement = retirement;
     }
 
 
