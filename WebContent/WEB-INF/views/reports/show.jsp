@@ -17,17 +17,21 @@
                             <th>日付</th>
                             <td><fmt:formatDate value='${report.report_date}' pattern='yyyy-MM-dd' /></td>
                         </tr>
-                        <tr>
-                            <th>出勤</th>
-                            <td><c:out value="${report.gowork}" /></td>
-                        </tr>
 
                        <tr>
-                            <th>退勤</th>
-                            <td><c:out value="${report.retirement}" /></td>
+                            <th><p>出勤</p></th>
+                           <td>
+                           <p><c:out value="${report.gowork}" /></p></td>
                         </tr>
+
+
                         <tr>
-                            <th>内容</th>
+                            <th>退勤</th>
+                            <td><p><c:out value="${report.retirement}" /></p></td>
+                        </tr>
+
+                        <tr>
+                            <th><p>内容</p></th>
                             <td>
                                 <pre><c:out value="${report.content}" /></pre>
                             </td>

@@ -22,13 +22,13 @@
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
 
-<label for="gowork">出勤</label><br />
-<input type="time" name="example1">
+<p><label for="gowork">出勤</label></p><br />
+<input type="time" name="gowork">
 
-<label for="retirement">退勤</label><br />
-<input type="time" name="example2">
+<p><label for="retirement">退勤</label></p><br />
+<input type="time" name="retirement">
 
-<label for="content">内容</label><br />
+<p><label for="content">内容</label></p><br />
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
 
